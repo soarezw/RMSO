@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    background-color: black;
+    color: rgb(187, 90, 90);
+}
+
+h1 {
+    font-family: "Antonio", sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+h4{
+    color: black;
+}
+
+p {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Menu styles */
+.navbar {
+    margin-bottom: 20px; /* Espaçamento abaixo do menu */
+}
+
+.nav-link:hover {
+    font-weight: bold; /* Efeito ao passar o mouse */
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px; /* Bordas completamente arredondadas */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background-color: #7ed957; /* Cor do fundo */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    transitioN: background-colo 0.3s, transform 0.3s; /* Efeitos de transição */
+    position: fixed; /* Mantém o botão fixo na tela */
+    right: 10px; /* Distância da borda direita */
+    bottom: 10px; /* Distância da borda inferior */
+}
+
+.btn:hover {
+    background-color: #5cb85c; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Modo Noturno */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode #navbar {
+    background-color: darkgray; /* Cor da navbar no modo noturno */
+}
+
+.dark-mode .nav-link {
+    color: white; /* Cor dos links no modo noturno */
+}
+
+.dark-mode .nav-link:hover {
+    color: black; /* Cor ao passar o mouse no modo noturno */
+}
+.dark-mode .h4{
+    color: white;
+}
+
+button {
+    right: 20px; /* Distância da borda direita */
+    top: 10px; /* Distância do topo */
+    z-index: 10; /* Para garantir que o botão esteja acima de outros elementos */
+}
+
+/* Alinhamento do Menu */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start /* Alinha o menu à esquerda */
+    }
+}
